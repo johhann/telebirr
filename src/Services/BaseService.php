@@ -35,7 +35,7 @@ class BaseService
     private function getFormattedPublicKey(): void
     {
         // Check if a valid public key is present
-        if (!self::$publicKey) {
+        if (! self::$publicKey) {
             // If not, throw an exception with an error message
             throw new \RuntimeException('Invalid public key');
         }
@@ -44,7 +44,7 @@ class BaseService
         $pubPem = chunk_split(self::$publicKey, 64, "\n");
 
         // Add PEM headers to the formatted public key
-        $pubPem = "-----BEGIN PUBLIC KEY-----\n" . $pubPem . "-----END PUBLIC KEY-----\n";
+        $pubPem = "-----BEGIN PUBLIC KEY-----\n".$pubPem."-----END PUBLIC KEY-----\n";
 
         // Convert the formatted public key to an OpenSSL public key resource
         self::$publicKey = openssl_pkey_get_public($pubPem);
@@ -59,7 +59,7 @@ class BaseService
     private function validatePublicKey(): void
     {
         // Check if a valid public key is present
-        if (!self::$publicKey) {
+        if (! self::$publicKey) {
             // If not, exit the application with an error message
             throw new \RuntimeException('Invalid public key');
         }

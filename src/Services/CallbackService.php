@@ -3,14 +3,14 @@
 namespace Johhann\Telebirr\Services;
 
 /**
- * DecryptService Class
+ * CallbackService Class
  *
  * Extends the BaseService class and provides final implementation for decrypting data for telebirr callback response.
  * This class cannot be further extended by other classes.
  *
  * @extends BaseService
  */
-final class DecryptService extends BaseService
+final class CallbackService extends BaseService
 {
     /**
      * Constructor for the class

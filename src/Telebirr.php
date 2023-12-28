@@ -2,7 +2,7 @@
 
 namespace Johhann\Telebirr;
 
-use Johhann\Telebirr\Services\DecryptService;
+use Johhann\Telebirr\Services\CallbackService;
 use Johhann\Telebirr\Services\EncryptService;
 
 /**
@@ -41,15 +41,15 @@ class Telebirr
     }
 
     /**
-     * Decrypt Method
+     * Callback Method
      *
-     * Initiates the decryption process using the DecryptService to retrieve decrypted data.
+     * Initiates the decryption process using the CallbackService to retrieve decrypted data.
      *
-     * @return array The decrypted data obtained from the DecryptService.
+     * @return array The decrypted data obtained from the CallbackService.
      */
-    public function decrypt(): array
+    public function callback(): array
     {
-        // Use DecryptService to handle the decryption process
-        return (new DecryptService())->handle();
+        // Use CallbackService to handle the decryption process
+        return (new CallbackService())->handle();
     }
 }
