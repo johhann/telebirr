@@ -37,7 +37,7 @@ If you discover any security related issues, please email author@email.com inste
 
 ## Credits
 
-- [Yohannes Mekonnen][https://github.com/johhann]
+- [Yohannes Mekonnen](https://github.com/johhann)
 ## License
 
 MIT. Please see the [license file](license.md) for more information.
