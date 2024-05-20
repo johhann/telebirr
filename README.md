@@ -17,6 +17,9 @@ composer require johhann/telebirr
 
 ## Usage
 
+You can publish config files by running:
+`php artisan vendor:publish --provider="Johhann\Telebirr\TelebirrServiceProvider" --tag="telebirr.config"`
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
