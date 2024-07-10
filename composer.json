@@ -1,6 +1,6 @@
 {
     "name": "johhann/telebirr",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "A package to easily integrate telebirr payment, provided by an Ethiopian Telecom Service (ethiotelecom), for laravel applications.",
     "license": "MIT",
     "authors": [
