@@ -18,11 +18,20 @@ composer require johhann/telebirr
 ## Usage
 
 You can publish config files by running:
-`php artisan vendor:publish --provider="Johhann\Telebirr\TelebirrServiceProvider" --tag="telebirr.config"`
 
-## Change log
+```
+php artisan vendor:publish --provider="Johhann\Telebirr\TelebirrServiceProvider" --tag="telebirr.config"
+```
 
-Please see the [changelog](changelog.md) for more information on what has changed recently.
+Add the following environment variable to your `.env` file and set their values telebirr provider
+```
+TELEBIRR_APP_ID=
+TELEBIRR_APP_KEY=
+TELEBIRR_NOTIFY_URL=
+TELEBIRR_RETURN_URL=
+TELEBIRR_TRADE_PAY_URL=
+TELEBIRR_PUBLIC_KEY=
+```
 
 ## Testing
 
